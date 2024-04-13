@@ -4,4 +4,8 @@
     userName = "Tibet Tornaci";
     userEmail = "oofdere@hey.com";
   };
+
+  programs.gh = {
+    enable = true;
+  };
 }

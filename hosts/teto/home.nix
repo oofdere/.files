@@ -23,7 +23,6 @@
     floorp
     steam
     github-desktop
-    gh
     alejandra
   ];
 
