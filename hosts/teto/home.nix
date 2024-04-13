@@ -1,6 +1,8 @@
-{ config, pkgs, ... }:
-
 {
+  config,
+  pkgs,
+  ...
+}: {
   imports = [
     ../../apps/git.nix
   ];
@@ -11,7 +13,7 @@
   home.packages = with pkgs; [
     nano
     cowsay
-    gnupg    
+    gnupg
     tree
     firefox
     kate
