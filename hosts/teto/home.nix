@@ -21,6 +21,8 @@
     floorp
     steam
     github-desktop
+    gh
+    alejandra
   ];
 
   programs.bash = {
