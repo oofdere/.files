@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware.nix
       ../common
+      ../../apps/fonts.nix
     ];
 
   # Bootloader.

@@ -13,6 +13,14 @@
     cowsay
     gnupg    
     tree
+    firefox
+    kate
+    discord
+    vscodium
+    warp-terminal
+    floorp
+    steam
+    github-desktop
   ];
 
   programs.bash = {
