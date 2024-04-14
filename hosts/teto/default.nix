@@ -12,6 +12,7 @@
     ./hardware.nix
     ../common
     ../../apps/fonts.nix
+    ./styles.nix
   ];
 
   # Bootloader.
