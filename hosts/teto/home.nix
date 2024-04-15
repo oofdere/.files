@@ -27,6 +27,7 @@
     alejandra
     bun
     alacritty
+    qt6.qtwebengine
   ];
 
   home.stateVersion = "23.11";

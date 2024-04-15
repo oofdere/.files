@@ -1,0 +1,18 @@
+scheme: "Triple Baka"
+author: "AI-generated, nya~"
+base00: "1E0611" # Darkest Teto color for background
+base01: "3D0E1A" # Darker Teto color for status bars and line numbers
+base02: "5E1529" # Teto color for selection background
+base03: "7F1D38" # Teto color for comments and invisibles
+base04: "E5527B" # Teto color for dark foreground
+base05: "FFB8C7" # Light Teto color for default foreground and delimiters
+base06: "FFE5EC" # Lighter Teto color for light foreground
+base07: "FFF5F7" # Lightest Teto color for light background
+base08: "007777" # Darker Miku color for variables and XML tags
+base09: "00FFFF" # Bright Miku color for integers and constants
+base0A: "C9B21A" # Darker Len color for classes and search text background
+base0B: "F7E331" # Len color for strings and diff inserted
+base0C: "39C5BB" # Miku color for support and escape characters
+base0D: "1A8DB3" # Miku color for functions and headings
+base0E: "8B572A" # Darker Len color for keywords and diff changed
+base0F: "F5A300" # Len color for deprecated elements
