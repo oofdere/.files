@@ -6,6 +6,7 @@
   imports = [
     ../../apps/git.nix
     ../../apps/bash.nix
+    ../../apps/codium.nix
   ];
 
   home.username = "teo";
@@ -19,12 +20,13 @@
     firefox
     kate
     discord
-    vscodium
     warp-terminal
     floorp
     steam
     github-desktop
     alejandra
+    bun
+    alacritty
   ];
 
   home.stateVersion = "23.11";
