@@ -19,7 +19,7 @@
     tree
     firefox
     kate
-    discord
+    vesktop
     warp-terminal
     floorp
     steam
