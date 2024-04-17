@@ -9,6 +9,10 @@
 
     stylix.url = "github:danth/stylix";
 
+    plasma-manager.url = "github:pjones/plasma-manager";
+    plasma-manager.inputs.nixpkgs.follows = "nixpkgs";
+    plasma-manager.inputs.home-manager.follows = "home-manager";
+
     nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
     nixos-cosmic.inputs.nixpkgs.follows = "nixpkgs";
   };
@@ -17,6 +21,7 @@
     self,
     nixpkgs,
     home-manager,
+    plasma-manager,
     nixos-cosmic,
     stylix,
     ...
@@ -38,6 +43,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
+            home-manager.sharedModules = [plasma-manager.homeManagerModules.plasma-manager];
             home-manager.users.teo = import ./hosts/teto/home.nix;
             # Optionally, use home-manager.extraSpecialArgs to pass arguments to home.nix
           }

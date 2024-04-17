@@ -1,12 +1,14 @@
 {
   config,
   pkgs,
+  services,
   ...
 }: {
   imports = [
     ../../apps/git.nix
     ../../apps/bash.nix
     ../../apps/codium.nix
+    ../../apps/plasma.nix
   ];
 
   home.username = "teo";
@@ -27,6 +29,7 @@
     alejandra
     bun
     alacritty
+    lunacy
     qt6.qtwebengine
   ];
 
