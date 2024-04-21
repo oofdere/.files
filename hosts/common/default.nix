@@ -27,6 +27,9 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  # Enable networking
+  networking.networkmanager.enable = true;
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -37,6 +40,9 @@
     neofetch
     glances
   ];
+
+  # Use latest kernel
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # List services that you want to enable:
   services.tailscale.enable = true;
