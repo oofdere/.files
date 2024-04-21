@@ -39,7 +39,7 @@
   services.desktopManager.plasma6.enable = true;
 
   # Enable the COSMIC Desktop Environment:
-  services.desktopManager.cosmic.enable = true;
+  #services.desktopManager.cosmic.enable = true;
   #services.displayManager.cosmic-greeter.enable = true;
 
   # Configure keymap in X11
