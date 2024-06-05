@@ -53,7 +53,7 @@
           name = "vscord";
           publisher = "LeonardSSH";
           version = "latest";
-          sha256 = "1c9bd5a57d9c6ad8af772c6c9d58c9051bc84f09a4ca859e85a7d62fde52d81d";
+          sha256 = "sha256-RKQcLiuzaPInZ1SG0Rg7a2oOZ3+EbiAu6er8YRLA0Fs=";
         }
       ];
   };

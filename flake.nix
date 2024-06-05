@@ -15,6 +15,8 @@
 
     nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
     nixos-cosmic.inputs.nixpkgs.follows = "nixpkgs";
+
+    nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
   };
 
   outputs = {
@@ -24,9 +26,26 @@
     plasma-manager,
     nixos-cosmic,
     stylix,
+    nixpkgs-xr,
     ...
   } @ inputs: {
     nixosConfigurations = {
+      fubuki = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          stylix.nixosModules.stylix
+          nixpkgs-xr.nixosModules.nixpkgs-xr
+          ./hosts/fubuki
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.sharedModules = [plasma-manager.homeManagerModules.plasma-manager];
+            home-manager.users.teo = import ./hosts/fubuki/home.nix;
+            # Optionally, use home-manager.extraSpecialArgs to pass arguments to home.nix
+          }
+        ];
+      };
       teto = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
