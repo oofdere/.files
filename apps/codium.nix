@@ -49,12 +49,7 @@
         ms-vscode.hexeditor
       ]
       ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
-        {
-          name = "vscord";
-          publisher = "LeonardSSH";
-          version = "latest";
-          sha256 = "sha256-RKQcLiuzaPInZ1SG0Rg7a2oOZ3+EbiAu6er8YRLA0Fs=";
-        }
+        
       ];
   };
 }
