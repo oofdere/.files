@@ -12,8 +12,11 @@ imports = [
 
     home.packages = [
         pkgs.htop
+        pkgs.neofetch
+        pkgs.zed-editor
     ];
 
+    programs.nushell.enable = true;
 
 
     programs.home-manager.enable = true;
